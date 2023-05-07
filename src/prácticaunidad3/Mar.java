@@ -11,9 +11,17 @@ public class Mar {
     private int profundidad;
     private HashSet<Puerto> puertos;
 
+    /**
+     *Constructor por defecto
+     */
     public Mar() {
     }
 
+    /**
+     * 
+     * @param nombre
+     * @param profundidad
+     */
     public Mar(String nombre, int profundidad) {
         this.nombre = nombre;
         this.profundidad = profundidad;
@@ -22,7 +30,7 @@ public class Mar {
     /**
      * Obtiene el nombre del mar
      * 
-     * @generated
+     * 
      */
     private String getNombre() {
         return this.nombre;
@@ -31,7 +39,7 @@ public class Mar {
     /**
      * Establece el nombre del mar
      * 
-     * @generated
+     * 
      */
     private void setNombre(String nombre) {
         this.nombre = nombre;
@@ -40,7 +48,7 @@ public class Mar {
     /**
      * Obtiene la profundidad del Mar
      * 
-     * @generated
+     * 
      */
     private int getProfundidad() {
         return this.profundidad;
@@ -49,7 +57,7 @@ public class Mar {
     /**
      * Establece la profundidad del mar
      * 
-     * @generated
+     * 
      */
     private void setProfundidad(Integer profundidad) {
         this.profundidad = profundidad;
@@ -58,7 +66,8 @@ public class Mar {
     /**
      * Obtiene los puertos que se ubican en el mar
      * 
-     * @generated
+     * @return 
+     * 
      */
     public HashSet<Puerto> getPuertos() {
         if (this.puertos == null) {
@@ -70,7 +79,8 @@ public class Mar {
     /**
      * Establece los puertos que se ubican en el mar
      * 
-     * @generated
+     * @param puertos
+     * 
      */
     public void setPuertos(HashSet<Puerto> puertos) {
         this.puertos = puertos;
@@ -81,7 +91,9 @@ public class Mar {
     /**
      * Obtiene el puerto ubicado en el mar por Pais
      * 
-     * @generated
+     * @param pais
+     * @return 
+     * 
      */
     public HashSet<Puerto> getPuertosByPais(Pais pais) {
         HashSet<Puerto> puertosFiltrados = new HashSet<>();
@@ -95,6 +107,11 @@ public class Mar {
         return puertosFiltrados;
     }
 
+    /**
+     *
+     * @param obj
+     * @return
+     */
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Mar)) {

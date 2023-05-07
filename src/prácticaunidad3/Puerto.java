@@ -18,7 +18,8 @@ public class Puerto {
     /**
      * Asigna el pais de origen del puerto
      * 
-     * @generated
+     * @param paisOrigen
+     * 
      */
     public void setPaisOrigen(Pais paisOrigen) {
         this.paisOrigen = paisOrigen;
@@ -27,7 +28,8 @@ public class Puerto {
     /**
      * Obtiene el pais de origen del puerto
      * 
-     * @generated
+     * @return 
+     * 
      */
     public Pais getPaisOrigen() {
         return this.paisOrigen;
@@ -36,7 +38,7 @@ public class Puerto {
     /**
      * Obtiene el nombre del puerto
      * 
-     * @generated
+     * 
      */
     private String getNombre() {
         return this.nombre;
@@ -45,7 +47,7 @@ public class Puerto {
     /**
      * Asigna el nombre del puerto
      * 
-     * @generated
+     * 
      */
     private void setNombre(String nombre) {
         this.nombre = nombre;
@@ -54,7 +56,7 @@ public class Puerto {
     /**
      * Obtiene la descripcion del puerto
      * 
-     * @generated
+     * 
      */
     private String getDescripcion() {
         return this.descripcion;
@@ -63,7 +65,7 @@ public class Puerto {
     /**
      * Asigna la descripción del puerto
      * 
-     * @generated
+     * 
      */
     private void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
@@ -72,7 +74,8 @@ public class Puerto {
     /**
      * Obtiene el Mar al que pertenece el puerto
      * 
-     * @generated
+     * @return 
+     * 
      */
     public Mar getMarOrigen() {
         return this.marOrigen;
@@ -81,7 +84,8 @@ public class Puerto {
     /**
      * Asignal el Mar al que pertenece el puerto
      * 
-     * @generated
+     * @param marOrigen
+     * 
      */
     public void setMarOrigen(Mar marOrigen) {
         this.marOrigen = marOrigen;
@@ -90,7 +94,8 @@ public class Puerto {
     /**
      * Obtiene los buques que pertenecen al puerto
      * 
-     * @generated
+     * @return 
+     * 
      */
     public HashSet<Buque> getBuques() {
         if (this.buques == null) {
@@ -102,7 +107,8 @@ public class Puerto {
     /**
      * Asigna un listado de buques al puerto
      * 
-     * @generated
+     * @param buques
+     * 
      */
     public void setBuques(HashSet<Buque> buques) {
         this.buques = buques;
@@ -111,7 +117,8 @@ public class Puerto {
     /**
      * Obtiene las visitas de los buques realizadas al puerto
      * 
-     * @generated
+     * @return 
+     * 
      */
     public HashSet<Visita> getVisitas() {
         if (this.visitas == null) {
@@ -123,7 +130,8 @@ public class Puerto {
     /**
      * Asignal el listado de buques que han visitado el puerto
      * 
-     * @generated
+     * @param visitas
+     * 
      */
     public void setVisitas(HashSet<Visita> visitas) {
         this.visitas = visitas;
@@ -132,7 +140,8 @@ public class Puerto {
     /**
      * Obtiene la lista de paises en los que esta establecido el puerto
      * 
-     * @generated
+     * @return 
+     * 
      */
     public HashSet<Pais> getPaises() {
         if (this.paises == null) {
@@ -144,7 +153,8 @@ public class Puerto {
     /**
      * Asigna el listado de paises a los que pertenece el puerto
      * 
-     * @generated
+     * @param paises
+     * 
      */
     public void setPaises(HashSet<Pais> paises) {
         this.paises = paises;
@@ -155,7 +165,8 @@ public class Puerto {
     /**
      * Registra una visita realizada por un buque
      * 
-     * @generated
+     * @param visita
+     * 
      */
     public void registrarVisita(Visita visita) {
         this.visitas.add(visita);

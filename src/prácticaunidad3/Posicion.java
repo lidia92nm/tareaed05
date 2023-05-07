@@ -12,9 +12,19 @@ public class Posicion {
     private Date timestamp;
     private Buque buque;
 
+    /**
+     * Constructor por defecto
+     */
     public Posicion() {
     }
 
+    /**
+     *
+     * @param latitud
+     * @param longitud
+     * @param timestamp
+     * @param buque
+     */
     public Posicion(int latitud, int longitud, Date timestamp, Buque buque) {
         this.latitud = latitud;
         this.longitud = longitud;
@@ -24,8 +34,8 @@ public class Posicion {
 
     /**
      * Obtiene la latitud de la posicion
-     * 
-     * @generated
+     *
+     *
      */
     private int getLatitud() {
         return this.latitud;
@@ -33,8 +43,8 @@ public class Posicion {
 
     /**
      * Establece la latitud de la posicion
-     * 
-     * @generated
+     *
+     *
      */
     private void setLatitud(Integer latitud) {
         this.latitud = latitud;
@@ -42,8 +52,8 @@ public class Posicion {
 
     /**
      * Obtiene al latitud de la posicion
-     * 
-     * @generated
+     *
+     *
      */
     private int getLongitud() {
         return this.longitud;
@@ -51,8 +61,8 @@ public class Posicion {
 
     /**
      * Establece la longitud de la posicion
-     * 
-     * @generated
+     *
+     *
      */
     private void setLongitud(Integer longitud) {
         this.longitud = longitud;
@@ -60,8 +70,8 @@ public class Posicion {
 
     /**
      * Obtiene la fecha y hora de la posicion
-     * 
-     * @generated
+     *
+     *
      */
     private Date getTimestamp() {
         return this.timestamp;
@@ -69,8 +79,8 @@ public class Posicion {
 
     /**
      * Establece la fecha y hora de la posicion
-     * 
-     * @generated
+     *
+     *
      */
     private void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
@@ -78,8 +88,9 @@ public class Posicion {
 
     /**
      * Obtiene el buque perteneciente de la posicion
-     * 
-     * @generated
+     *
+     * @return
+     *
      */
     public Buque getBuque() {
         return this.buque;
@@ -87,8 +98,9 @@ public class Posicion {
 
     /**
      * Establece el buque al que le pertenece esta posicion
-     * 
-     * @generated
+     *
+     * @param buque
+     *
      */
     public void setBuque(Buque buque) {
         this.buque = buque;

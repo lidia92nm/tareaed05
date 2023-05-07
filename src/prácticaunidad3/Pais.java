@@ -11,9 +11,17 @@ public class Pais {
     private String continente;
     private HashSet<Puerto> puertos;
 
+    /**
+     * Constructor por defecto
+     */
     public Pais() {
     }
 
+    /**
+     *
+     * @param nombre
+     * @param continente
+     */
     public Pais(String nombre, String continente) {
         this.nombre = nombre;
         this.continente = continente;
@@ -21,8 +29,8 @@ public class Pais {
 
     /**
      * Obtiene el nombre del pais
-     * 
-     * @generated
+     *
+     *
      */
     private String getNombre() {
         return this.nombre;
@@ -30,8 +38,8 @@ public class Pais {
 
     /**
      * Establece el nombre del pais
-     * 
-     * @generated
+     *
+     *
      */
     private void setNombre(String nombre) {
         this.nombre = nombre;
@@ -39,8 +47,8 @@ public class Pais {
 
     /**
      * Obtiene el continente al que pertenece el pais
-     * 
-     * @generated
+     *
+     *
      */
     private String getContinente() {
         return this.continente;
@@ -48,8 +56,8 @@ public class Pais {
 
     /**
      * Establece el continente al que pertenece el pais
-     * 
-     * @generated
+     *
+     *
      */
     private void setContinente(String continente) {
         this.continente = continente;
@@ -57,8 +65,9 @@ public class Pais {
 
     /**
      * Obtiene el listado de puerto que tiene el pais
-     * 
-     * @generated
+     *
+     * @return
+     *
      */
     public HashSet<Puerto> getPuertos() {
         if (this.puertos == null) {
@@ -69,19 +78,21 @@ public class Pais {
 
     /**
      * Establece el listado de puertos del pais
-     * 
-     * @generated
+     *
+     * @param puertos
+     *
      */
     public void setPuertos(HashSet<Puerto> puertos) {
         this.puertos = puertos;
     }
 
     // Operations
-
     /**
      * Obtiene el puerto cuyo mar sea identico al especificado
-     * 
-     * @generated
+     *
+     * @param mar
+     * @return
+     *
      */
     public Puerto getPuertosByMar(Mar mar) {
         for (Puerto puerto : puertos) {
@@ -93,6 +104,11 @@ public class Pais {
         return null;
     }
 
+    /**
+     *
+     * @param obj
+     * @return
+     */
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Pais)) {

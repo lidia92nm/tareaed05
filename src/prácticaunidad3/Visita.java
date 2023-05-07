@@ -16,6 +16,7 @@ public class Visita {
     /**
      * Constructor
      * 
+     * @param posicionBuque
      */
     public Visita(Posicion posicionBuque) {
         this.posicionBuque = posicionBuque;
@@ -24,14 +25,16 @@ public class Visita {
     /**
      * Obtiene la posicion del buque
      * 
-     * @generated
+     * @return 
+     * 
      */
     public Posicion getPosicionBuque() {
         return this.posicionBuque;
     }
 
     /**
-     * @generated
+     * @param posicionBuque
+     * 
      */
     public void setPosicionBuque(Posicion posicionBuque) {
         this.posicionBuque = posicionBuque;
@@ -42,7 +45,8 @@ public class Visita {
     /**
      * Obtiene el buque que ha realizado la visita
      * 
-     * @generated
+     * @return 
+     * 
      */
     public Buque getBuque() {
         return this.posicionBuque.getBuque();

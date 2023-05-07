@@ -17,9 +17,22 @@ public class Buque {
     private Puerto lugarOrigen;
     private List<Posicion> posiciones;
 
+    /**
+     * Constructor por defecto
+     */
     public Buque() {
     }
 
+    /**
+     *
+     * @param id El id del buque
+     * @param nombre El nombre del buque
+     * @param nombreDuenyo El nombre del dueño
+     * @param tonelaje El tonelaje
+     * @param materialCasco El material del casco
+     * @param tipoBuque El tipo del buque
+     * @param lugarOrigen El lugar de origen
+     */
     public Buque(int id,
             String nombre,
             String nombreDuenyo,
@@ -39,7 +52,7 @@ public class Buque {
     /**
      * Obtiene le identificador del buque
      *
-     * @generated
+     * 
      */
     private int getId() {
         return this.id;
@@ -48,7 +61,7 @@ public class Buque {
     /**
      * Asigna el Identificador del buque
      *
-     * @generated
+     * 
      */
     private void setId(Integer id) {
         this.id = id;
@@ -57,7 +70,7 @@ public class Buque {
     /**
      * Obtiene el nombre del buque
      *
-     * @generated
+     * 
      */
     private String getNombre() {
         return this.nombre;
@@ -66,7 +79,7 @@ public class Buque {
     /**
      * Asignal el nombre del buque
      *
-     * @generated
+     * 
      */
     private void setNombre(String nombre) {
         this.nombre = nombre;
@@ -75,7 +88,7 @@ public class Buque {
     /**
      * Obtiene el nombre del dueño del buque
      *
-     * @generated
+     * 
      */
     private String getNombreDuenyo() {
         return this.nombreDuenyo;
@@ -84,7 +97,7 @@ public class Buque {
     /**
      * Asigna el nombre del dueño del buque
      *
-     * @generated
+     * 
      */
     private void setNombreDuenyo(String nombreDuenyo) {
         this.nombreDuenyo = nombreDuenyo;
@@ -93,7 +106,7 @@ public class Buque {
     /**
      * Obtiene el tonelaje del buque
      *
-     * @generated
+     * 
      */
     private int getTonelaje() {
         return this.tonelaje;
@@ -102,7 +115,7 @@ public class Buque {
     /**
      * Asignal el tonelaje del buque
      *
-     * @generated
+     * 
      */
     private void setTonelaje(Integer tonelaje) {
         this.tonelaje = tonelaje;
@@ -111,7 +124,7 @@ public class Buque {
     /**
      * Obtiene el tipo de material del casco del buque
      *
-     * @generated
+     * 
      */
     private String getMaterialCasco() {
         return this.materialCasco;
@@ -120,7 +133,7 @@ public class Buque {
     /**
      * Asignal el material del casco del buque
      *
-     * @generated
+     * 
      */
     private void setMaterialCasco(String materialCasco) {
         this.materialCasco = materialCasco;
@@ -129,7 +142,7 @@ public class Buque {
     /**
      * Obtiene el tipo de buque
      *
-     * @generated
+     * 
      */
     private TipoBuque getTipoBuque() {
         return this.tipoBuque;
@@ -138,7 +151,7 @@ public class Buque {
     /**
      * Asigna el tipo de buque
      *
-     * @generated
+     * 
      */
     private void setTipoBuque(TipoBuque tipoBuque) {
         this.tipoBuque = tipoBuque;
@@ -147,14 +160,16 @@ public class Buque {
     /**
      * Obtiene el Puerto al que el buque pertenece
      *
-     * @generated
+     * @return
+     * 
      */
     public Puerto getLugarOrigen() {
         return this.lugarOrigen;
     }
 
     /**
-     * @generated
+     * @param lugarOrigen
+     * 
      */
     public void setLugarOrigen(Puerto lugarOrigen) {
         this.lugarOrigen = lugarOrigen;
@@ -163,7 +178,8 @@ public class Buque {
     /**
      * Obtiene el listado de posiciones del buque
      *
-     * @generated
+     * @return
+     * 
      */
     public List<Posicion> getPosiciones() {
         if (this.posiciones == null) {
@@ -175,7 +191,8 @@ public class Buque {
     /**
      * Asigna el lista de posiciones del buque
      *
-     * @generated
+     * @param posiciones
+     * 
      */
     public void setPosiciones(List<Posicion> posiciones) {
         this.posiciones = posiciones;
@@ -185,7 +202,8 @@ public class Buque {
     /**
      * Registra la posicion en el historico del buque
      *
-     * @generated
+     * @param posicion
+     * 
      */
     public void registrarPosicion(Posicion posicion) {
         this.posiciones.add(posicion);

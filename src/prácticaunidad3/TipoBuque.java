@@ -6,6 +6,14 @@ package prácticaunidad3;
  * @author lidia92nm
  */
 public enum TipoBuque {
-	NORMAL,
-	GUERRA
+
+    /**
+     *
+     */
+    NORMAL,
+
+    /**
+     *
+     */
+    GUERRA
 }
